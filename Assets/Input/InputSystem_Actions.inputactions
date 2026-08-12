@@ -43,10 +43,10 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interact",
+                    "name": "PickUp",
                     "type": "Button",
                     "id": "852140f2-7766-474d-8707-702459ba45f3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold",
                     "initialStateCheck": false
@@ -55,7 +55,7 @@
                     "name": "Crouch",
                     "type": "Button",
                     "id": "27c5f898-bc57-4ee1-8800-db469aca5fe3",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -82,6 +82,33 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "68fc350b-7b7c-42c7-9c97-245cf2370a32",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "shoot Release",
+                    "type": "Button",
+                    "id": "7867d2c2-fb2a-4f51-a1ed-ec5e4bbde808",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "c514ce26-f065-45b9-a8de-f220dbcd70e8",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -437,7 +464,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Interact",
+                    "action": "PickUp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -448,7 +475,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Interact",
+                    "action": "PickUp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -471,6 +498,39 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e58f928-c15c-4b93-83aa-54ac6f7be0eb",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27c2cea8-8e24-486a-a606-97ef1a19fa9c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "shoot Release",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3ba4bd1d-0b36-44bf-881f-a9b4667c57be",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
