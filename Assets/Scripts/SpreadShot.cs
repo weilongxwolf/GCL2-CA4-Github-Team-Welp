@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class Weapons : MonoBehaviour
+public class SpreadShot : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float bulletSpeed = 20f;
     public float bulletPower;
-    public float shotsPerSecond = 3f;
+    public float shotsPerSecond = 1f;
     private float fireRate;
     private float nextFireTime = 0f;
 
-    public int maxAmmo = 15;
+    public int maxAmmo = 8;
     private int currentAmmo;
     public float reloadTime = 2f;
     private bool isReloading = false;
@@ -45,10 +45,22 @@ public class Weapons : MonoBehaviour
     }
     void Fire()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        currentAmmo--;
 
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        rb.linearVelocity = firePoint.forward * bulletSpeed;
+        int bulletCount = 8;
+        float spreadAngle = 10f;
+
+        for (int i = 0; i < bulletCount; i++)
+        {
+            float angle = ((float)i - (bulletCount - 1) / 2f) * spreadAngle;
+
+            Quaternion rotation = firePoint.rotation * Quaternion.Euler(0, angle, 0);
+
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
+            rb.linearVelocity = rotation * Vector3.forward * bulletSpeed;
+        }
     }
 
     System.Collections.IEnumerator Reload()
