@@ -118,7 +118,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8987271428183440997}
-  - component: {fileID: 182989579173497407}
+  - component: {fileID: 5958264890822689220}
+  - component: {fileID: 3628182921707489831}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -144,7 +145,7 @@ Transform:
   - {fileID: 2846017144908660222}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &182989579173497407
+--- !u!114 &5958264890822689220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,13 +154,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 3071195876449200705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67da919ae7b12745a8e335d83f91ef4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bc6866fd0b3a7243a030e168e52b418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 3
   blastRadius: 5
   explosionForce: 700
   explosionEffect: {fileID: 5572332304191893834, guid: 3fa4c808c49cdb34e959d2090faa6c0f, type: 3}
+--- !u!65 &3628182921707489831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3071195876449200705}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09870386, y: 0.13678825, z: 0.09403372}
+  m_Center: {x: -0.003894031, y: 0.021215618, z: -0.001790762}
 --- !u!1 &3868017362901660298
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class SniperBullet : MonoBehaviour
 {
-    public float baseDamage = 50f;
+    public int baseDamage = 50;
     public float sweetSpotMultiplier = 4f;
 
     void OnCollisionEnter(Collision collision)
     {
-        Health targetHealth = collision.gameObject.GetComponent<Health>();
-        if (targetHealth != null)
+        Enemy targetEnemy = collision.gameObject.GetComponent<Enemy>();
+        if (targetEnemy != null)
         {
-            float damage = baseDamage;
+            int damage = baseDamage;
 
             if (collision.collider.CompareTag("Head"))
             {
-                damage *= sweetSpotMultiplier;
+                damage = (int)(damage * sweetSpotMultiplier);
                 Debug.Log("Headshot!");
             }
 
-            targetHealth.TakeDamage(damage);
+            targetEnemy.Hit(damage);
         }
 
         Destroy(gameObject);

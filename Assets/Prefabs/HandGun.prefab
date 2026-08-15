@@ -445,7 +445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5885720501388776837}
-  - component: {fileID: 7010533092248833976}
+  - component: {fileID: 2796001669051287737}
   m_Layer: 0
   m_Name: Handgun
   m_TagString: Untagged
@@ -474,7 +474,7 @@ Transform:
   - {fileID: 8961608674685153043}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7010533092248833976
+--- !u!114 &2796001669051287737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,14 +483,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4878196456818095874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646194cf684aaf5458d2e947e34797f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 47f60d4cd481d8444b4f909475382ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7611937310320503209, guid: 507fba8cb08d0604ba2c3e366bb3a994, type: 3}
-  firePoint: {fileID: 8961608674685153043}
-  bulletSpeed: 20
-  bulletPower: 5
-  shotsPerSecond: 3
+  reloadTime: 1
+  fireRate: 0.33333334
+  magSize: 15
+  bullet: {fileID: 6316385747983526832, guid: 17059f4ffe2acaf41ac6eb303070a8ce, type: 3}
+  bulletSpawnPoint: {fileID: 8961608674685153043}
+  weaponFlash: {fileID: 919132149155446097, guid: 6af55e24e4055fd4fae7139def365661, type: 3}
+  droppedWeapon: {fileID: 1849476924418813635, guid: 292463fcf2afedd409cc51f5b492af28, type: 3}
+  recoilDistance: 0.1
+  recoilSpeed: 15
 --- !u!1 &5054600420417091826
 GameObject:
   m_ObjectHideFlags: 0

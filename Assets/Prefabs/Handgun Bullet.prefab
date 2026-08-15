@@ -181,12 +181,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6028666718099065764}
-  - component: {fileID: 5531728197115670335}
+  - component: {fileID: 4979114795751769112}
   - component: {fileID: 2719173678979175413}
   - component: {fileID: 802737531271585092}
   - component: {fileID: 5853318017815503504}
   m_Layer: 0
-  m_Name: Bullet_01
+  m_Name: Handgun Bullet
   m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ Transform:
   - {fileID: 4010409833453310768}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5531728197115670335
+--- !u!114 &4979114795751769112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,11 +218,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6316385747983526832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a0e1b6858d28449abb7ac7b1e88f8d, type: 3}
+  m_Script: {fileID: 11500000, guid: d133dab204d9478439c5d0aea4a0a4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 20
   lifeTime: 3
+  damage: 10
 --- !u!65 &2719173678979175413
 BoxCollider:
   m_ObjectHideFlags: 0

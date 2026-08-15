@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1087698714022600899}
-  - component: {fileID: 2826431527163545526}
+  - component: {fileID: 1719212472729140812}
   m_Layer: 0
   m_Name: SMG
   m_TagString: Untagged
@@ -147,7 +147,7 @@ Transform:
   - {fileID: 6657298436205192302}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2826431527163545526
+--- !u!114 &1719212472729140812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,16 +156,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 4726875191321997257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646194cf684aaf5458d2e947e34797f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 47f60d4cd481d8444b4f909475382ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2647501693389654606, guid: fc537840fd7ebe148bfbce9fc1d08c88, type: 3}
-  firePoint: {fileID: 6657298436205192302}
-  bulletSpeed: 20
-  bulletPower: 8
-  shotsPerSecond: 13
-  maxAmmo: 50
-  reloadTime: 2
+  reloadTime: 1
+  fireRate: 0.07692308
+  magSize: 50
+  bullet: {fileID: 6901634778107153625, guid: 45a4e3065f69fa344a4b19984521d1e0, type: 3}
+  bulletSpawnPoint: {fileID: 6657298436205192302}
+  weaponFlash: {fileID: 919132149155446097, guid: 471ef74bca1f9db458eb85101f3e72eb, type: 3}
+  droppedWeapon: {fileID: 262590655514971974, guid: 2dd98a1599bddbf47bf6675bcd5f5e5c, type: 3}
+  recoilDistance: 0.1
+  recoilSpeed: 15
 --- !u!1 &6439003475873084142
 GameObject:
   m_ObjectHideFlags: 0

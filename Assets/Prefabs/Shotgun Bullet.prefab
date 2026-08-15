@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 1151419670324031482}
   - component: {fileID: 9121350585743079824}
   m_Layer: 0
-  m_Name: Bullet_02
+  m_Name: Shotgun Bullet
   m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

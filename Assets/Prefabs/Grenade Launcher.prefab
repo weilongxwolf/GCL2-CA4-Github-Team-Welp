@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734647144406620440}
-  - component: {fileID: 8548280634419502938}
+  - component: {fileID: 4515243146339819716}
   m_Layer: 0
   m_Name: Grenade Launcher
   m_TagString: Untagged
@@ -394,7 +394,7 @@ Transform:
   - {fileID: 2701894165759711687}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8548280634419502938
+--- !u!114 &4515243146339819716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -403,13 +403,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5490987672373078959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 646194cf684aaf5458d2e947e34797f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 47f60d4cd481d8444b4f909475382ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3071195876449200705, guid: 3d06ad5a89406cb4984442d82ae89a68, type: 3}
-  firePoint: {fileID: 2701894165759711687}
-  bulletSpeed: 20
-  bulletPower: 60
-  shotsPerSecond: 1
-  maxAmmo: 1
-  reloadTime: 2
+  reloadTime: 1
+  fireRate: 0.15
+  magSize: 1
+  bullet: {fileID: 3071195876449200705, guid: 336191db12aeb4d4a8cbfff64b2f5e02, type: 3}
+  bulletSpawnPoint: {fileID: 2701894165759711687}
+  weaponFlash: {fileID: 919132149155446097, guid: 69042fc8c5c2e104da631f5760d593c7, type: 3}
+  droppedWeapon: {fileID: 1280735373136437861, guid: 770ddf61c66cdd64886a1bfb5b893002, type: 3}
+  recoilDistance: 0.1
+  recoilSpeed: 15

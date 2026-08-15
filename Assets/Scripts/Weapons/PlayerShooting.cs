@@ -32,6 +32,19 @@ public class PlayerShooting : MonoBehaviour
             gun.Shoot();
         }
     }
+    void PickupGun(Gun newGun)
+    {
+        if (gun != null)
+            gun.Drop(); // drop current gun first
+
+        gun = newGun;
+        gun.transform.SetParent(gunHolder);
+        gun.transform.localPosition = Vector3.zero;
+        gun.transform.localRotation = Quaternion.identity;
+
+        Rigidbody rb = gun.GetComponent<Rigidbody>();
+        if (rb != null) rb.isKinematic = true;
+    }
 
     public void OnDrop()
     {
