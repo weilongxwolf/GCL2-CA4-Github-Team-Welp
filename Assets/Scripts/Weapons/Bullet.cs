@@ -2,20 +2,29 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 15f;
+    public float speed = 20f;
     public float lifeTime = 3f;
-
-    private Rigidbody rb;
+    public int damage = 10; // bullet-specific damage
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.linearVelocity = -transform.right * speed;
         Destroy(gameObject, lifeTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void Update()
     {
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Enemy will handle damage, but we pass the bullet reference
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.Hit(damage); // Enemy applies damage internally
+        }
+
         Destroy(gameObject);
     }
 }
