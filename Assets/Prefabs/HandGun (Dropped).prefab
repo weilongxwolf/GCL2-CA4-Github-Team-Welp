@@ -62,9 +62,21 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4878196456818095874, guid: 8264fb556bfb0624da50033d35554570, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1205620370109634682}
-  m_SourcePrefab: {fileID: 100100000, guid: 8264fb556bfb0624da50033d35554570, type: 3}
---- !u!1 &1849476924418813635 stripped
+      addedObject: {fileID: 8473512481531350905}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61cde697b650c3048bc07a4a3d01c430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 779435786147142324}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61cde697b650c3048bc07a4a3d01c430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5602075019467207873}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61cde697b650c3048bc07a4a3d01c430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4902670481852280807}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 61cde697b650c3048bc07a4a3d01c430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5498488647980105804}
+  m_SourcePrefab: {fileID: 100100000, guid: 61cde697b650c3048bc07a4a3d01c430, type: 3}
+--- !u!1 &1719930019833911456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4878196456818095874, guid: 8264fb556bfb0624da50033d35554570, type: 3}
   m_PrefabInstance: {fileID: 6492075899514902977}
@@ -84,3 +96,48 @@ MonoBehaviour:
   highlightMaterial: {fileID: 2100000, guid: dc878c90f1800e74689687a86dae795d, type: 2}
   weaponPrefab: {fileID: 4878196456818095874, guid: 8264fb556bfb0624da50033d35554570, type: 3}
   lookRange: 3
+--- !u!114 &4902670481852280807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719930019833911456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: d897c8719621c37459cf8af442920ea1, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &5498488647980105804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719930019833911456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba920a1bd5a95f840b12150d83cf6dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  pauseMenuUI: {fileID: 0}
+  globalVolume: {fileID: 0}

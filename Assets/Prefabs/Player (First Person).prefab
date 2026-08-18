@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 3730171519546328985}
   - component: {fileID: 3752145647147502678}
   - component: {fileID: 4448937918424206608}
+  - component: {fileID: 194181848731315669}
   m_Layer: 0
   m_Name: Player (First Person)
   m_TagString: Player
@@ -385,6 +386,7 @@ MonoBehaviour:
   zombieLayer:
     serializedVersion: 2
     m_Bits: 0
+  flashlight: {fileID: 0}
 --- !u!114 &4448937918424206608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,6 +401,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   cam: {fileID: 8905791341906554917}
+--- !u!114 &194181848731315669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6961402292355386507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba920a1bd5a95f840b12150d83cf6dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  pauseMenuUI: {fileID: 0}
+  globalVolume: {fileID: 0}
 --- !u!1 &7668922415407010121
 GameObject:
   m_ObjectHideFlags: 0
