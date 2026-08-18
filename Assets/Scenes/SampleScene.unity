@@ -120,6 +120,7 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &150344823
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +204,9 @@ Transform:
 =======
 --- !u!1001 &221570395
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
+--- !u!1001 &221570395
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -210,6 +214,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 303694946784451169, guid: fd604ee288f18114794668de4d445809, type: 3}
       propertyPath: m_LocalPosition.x
@@ -379,6 +384,8 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[11].m_ActionName
       value: 'Player/Reload[/Keyboard/r]'
 =======
+=======
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
     - target: {fileID: 972689153055965433, guid: a47587e14dd8d9f48bb1acb523513f73, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.09892
@@ -422,6 +429,9 @@ PrefabInstance:
     - target: {fileID: 7042822833599202986, guid: a47587e14dd8d9f48bb1acb523513f73, type: 3}
       propertyPath: m_Name
       value: Shotgun (Dropped)
+<<<<<<< HEAD
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -429,7 +439,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: fd604ee288f18114794668de4d445809, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: a47587e14dd8d9f48bb1acb523513f73, type: 3}
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 =======
   m_SourcePrefab: {fileID: 100100000, guid: a47587e14dd8d9f48bb1acb523513f73, type: 3}
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
@@ -960,6 +974,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &899419919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1348,8 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 =======
+=======
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 --- !u!1001 &1022896175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1390,6 +1407,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd98a1599bddbf47bf6675bcd5f5e5c, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 --- !u!1 &1097213279
 GameObject:
@@ -1523,6 +1543,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1192685182
 GameObject:
@@ -1693,6 +1714,9 @@ Light:
 =======
 --- !u!1001 &1112327683
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
+--- !u!1001 &1112327683
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1700,6 +1724,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 1719930019833911456, guid: 400c783e33ffadd4ea199908134e43c6, type: 3}
       propertyPath: m_Name
@@ -1746,6 +1771,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 =======
+=======
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
     - target: {fileID: 843927121443605572, guid: 292463fcf2afedd409cc51f5b492af28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.893
@@ -1790,11 +1817,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handgun (Dropped)
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 400c783e33ffadd4ea199908134e43c6, type: 3}
 --- !u!1 &1711577748
@@ -1935,6 +1966,8 @@ CanvasRenderer:
   m_GameObject: {fileID: 1711577748}
   m_CullTransparentMesh: 1
 =======
+=======
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
   m_SourcePrefab: {fileID: 100100000, guid: 292463fcf2afedd409cc51f5b492af28, type: 3}
 --- !u!1001 &1272357776
 PrefabInstance:
@@ -1993,6 +2026,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89fc4ce8fb216ea44a48ad9dd68f3083, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 --- !u!1001 &1777023626
 PrefabInstance:
@@ -2546,6 +2582,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2095756655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,6 +2724,9 @@ CanvasRenderer:
 =======
 --- !u!1001 &2102487758
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
+--- !u!1001 &2102487758
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2694,6 +2734,7 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 1897465163601527081, guid: c86b3e52e4b04c5479c91fc0dd5a9fca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2823,6 +2864,8 @@ PrefabInstance:
       addedObject: {fileID: 701396618}
   m_SourcePrefab: {fileID: 100100000, guid: c86b3e52e4b04c5479c91fc0dd5a9fca, type: 3}
 =======
+=======
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
     - target: {fileID: 1280735373136437861, guid: 770ddf61c66cdd64886a1bfb5b893002, type: 3}
       propertyPath: m_Name
       value: Grenade Launcher (Dropped)
@@ -2872,6 +2915,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770ddf61c66cdd64886a1bfb5b893002, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2894,4 +2940,7 @@ SceneRoots:
   - {fileID: 221570395}
   - {fileID: 2102487758}
   - {fileID: 1272357776}
+<<<<<<< HEAD
+>>>>>>> parent of 27cdbc0 (Further Weapon Changes)
+=======
 >>>>>>> parent of 27cdbc0 (Further Weapon Changes)
