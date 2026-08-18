@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 690222032544029011}
   - component: {fileID: 8829676218220445169}
   - component: {fileID: 885184132979501916}
-  - component: {fileID: -6705388753147400902}
+  - component: {fileID: 84597675839243702}
   - component: {fileID: 6866429942147369546}
   - component: {fileID: 4808727170928513058}
   - component: {fileID: 5808853343009582997}
   m_Layer: 0
   m_Name: SMG Bullet
-  m_TagString: Damage
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-6705388753147400902
+--- !u!114 &84597675839243702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   lifeTime: 3
-  damage: 3
+  damage: 10
 --- !u!65 &6866429942147369546
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.075, y: 0.075, z: 0.075}
+  m_Size: {x: 0.06333278, y: 0.034783006, z: 0.021972371}
   m_Center: {x: 0, y: 0.0009627938, z: 0}
 --- !u!54 &4808727170928513058
 Rigidbody:
