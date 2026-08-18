@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3343979376697985286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: 0.0784, z: 0.00076356716}
+  m_LocalPosition: {x: -0.236, y: 0.0784, z: 0.00076356716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132,8 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadTime: 1
-  fireRate: 0.15
-  magSize: 20
+  fireRate: 0.33
+  magSize: 15
   bullet: {fileID: 6316385747983526832, guid: 17059f4ffe2acaf41ac6eb303070a8ce, type: 3}
   bulletSpawnPoint: {fileID: 4448393340414571573}
   weaponFlash: {fileID: 8492836449084823582, guid: 008ff02386ca9e046971b7f5f104b2ed, type: 3}
