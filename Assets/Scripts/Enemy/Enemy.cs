@@ -138,6 +138,7 @@ public class Enemy : MonoBehaviour
     {
         isKnockedBack = true;
         Agent.isStopped = true;
+        Agent.velocity = Vector3.zero;
         if (Agent.hasPath) Agent.ResetPath();
 
         anim.SetBool("isWalking", false);

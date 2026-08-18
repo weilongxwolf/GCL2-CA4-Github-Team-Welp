@@ -25,9 +25,6 @@ public class PlayerController : MonoBehaviour
     public float shoveAngle = 60f;  // Width of player shove cone
     public LayerMask zombieLayer;   // Zombie Layer here
 
-    // Light Toogle
-    public Light flashlight;
-
     private CapsuleCollider capsuleCollider;
     private Rigidbody rb;
     private Vector2 moveInput;
@@ -131,17 +128,5 @@ public class PlayerController : MonoBehaviour
         Vector3 direction = transform.right * moveInput.x + transform.forward * moveInput.y;
         direction.Normalize();
         rb.linearVelocity = new Vector3(direction.x * currentspeed, rb.linearVelocity.y, direction.z * currentspeed);
-    }
-    void OnFlash()
-    {
-        if (flashlight != null)
-        {
-            flashlight.enabled = !flashlight.enabled;
-        }
-    }
-    void OnPause()
-    {
-        // Find the GameManager
-        FindAnyObjectByType<GameManager>()?.OnPause();
     }
 }
