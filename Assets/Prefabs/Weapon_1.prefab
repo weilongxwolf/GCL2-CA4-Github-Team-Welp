@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3151660568693929069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.635, y: 0.0482, z: -0}
+  m_LocalPosition: {x: -0.635, y: 0.0482, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103,15 +103,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 4042683349315627699}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7387527607644458519}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6824458689787498807}
+      addedObject: {fileID: 4439827783594485213}
   m_SourcePrefab: {fileID: 100100000, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
 --- !u!4 &303694946784451169 stripped
 Transform:
@@ -123,7 +120,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
   m_PrefabInstance: {fileID: 269170945822195082}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7387527607644458519
+--- !u!114 &4439827783594485213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,30 +129,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1116083868434907355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e328ed6eed7cfa34e9bbe1927c2df252, type: 3}
+  m_Script: {fileID: 11500000, guid: 47f60d4cd481d8444b4f909475382ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   reloadTime: 1
   fireRate: 0.15
   magSize: 20
-  bullet: {fileID: 6316385747983526832, guid: 144fdcbb10f3a1d40a9faa554d67cfd8, type: 3}
+  bullet: {fileID: 6316385747983526832, guid: 17059f4ffe2acaf41ac6eb303070a8ce, type: 3}
   bulletSpawnPoint: {fileID: 4042683349315627699}
   weaponFlash: {fileID: 8492836449084823582, guid: 008ff02386ca9e046971b7f5f104b2ed, type: 3}
   droppedWeapon: {fileID: 1116083868434907355, guid: fd604ee288f18114794668de4d445809, type: 3}
   recoilDistance: 0.1
   recoilSpeed: 15
---- !u!114 &6824458689787498807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116083868434907355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba920a1bd5a95f840b12150d83cf6dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  pauseMenuUI: {fileID: 0}
-  globalVolume: {fileID: 0}
