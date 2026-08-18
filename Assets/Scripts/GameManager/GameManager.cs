@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     // UI Setting
     public GameObject pauseMenuUI;
     public GameObject deathMenuUI;
+    public GameObject winMenuUI;
     public Image healthBarImage;
 
     // Effect Settings

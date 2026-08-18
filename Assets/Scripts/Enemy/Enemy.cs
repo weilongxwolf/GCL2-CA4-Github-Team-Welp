@@ -129,7 +129,7 @@ public class Enemy : MonoBehaviour
         // Route collision damage through the central Hit function
         if (collision.gameObject.CompareTag("Damage"))
         {
-            Hit(10);
+            Hit(25);
         }
     }
 
