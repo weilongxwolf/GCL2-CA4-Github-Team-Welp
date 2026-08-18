@@ -99,7 +99,6 @@ GameObject:
   - component: {fileID: 4248632708388921887}
   - component: {fileID: 1151419670324031482}
   - component: {fileID: 9121350585743079824}
-  - component: {fileID: 4638538033277372184}
   m_Layer: 0
   m_Name: Shotgun Bullet
   m_TagString: Damage
@@ -294,21 +293,6 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
---- !u!114 &4638538033277372184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516927014732652563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba920a1bd5a95f840b12150d83cf6dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  pauseMenuUI: {fileID: 0}
-  globalVolume: {fileID: 0}
 --- !u!1 &7880282903982939111
 GameObject:
   m_ObjectHideFlags: 0

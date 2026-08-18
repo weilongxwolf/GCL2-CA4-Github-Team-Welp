@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.7388692
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.041747
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -84,9 +84,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5618659290699139556}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8050466276059236489}
   m_SourcePrefab: {fileID: 100100000, guid: 59a4f863f77ec454db02cef977debcf2, type: 3}
 --- !u!1 &1116083868434907355 stripped
 GameObject:
@@ -180,24 +177,57 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7fc9a4bd-4034-485c-b04e-96bdffa4f8ad
+    m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: dd4b8509-7cfa-4713-a9e3-ec13707761db
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3b77780f-e961-4115-9eea-8b679b497cb5
+    m_ActionName: 'Player/Look[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 95c9e388-ebd5-4e0c-9b17-d4ff4f998b77
+    m_ActionName: 'Player/Attack[/Mouse/leftButton,/Touchscreen/primaryTouch/tap,/Keyboard/enter]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a69dd340-e5ff-4e7b-ae07-70871b4ab077
+    m_ActionName: 'Player/Tes[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f42a7ba6-3457-4f8c-a6a9-5712020c9389
+    m_ActionName: 'Player/Crouch[/Keyboard/c]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c377c3a1-8831-4930-8738-4f1a417f61be
+    m_ActionName: 'Player/Previous[/Keyboard/1]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1fc78557-04ad-41a2-b4cc-f7f0bcebef55
+    m_ActionName: 'Player/Next[/Keyboard/2]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3c5567d2-1f27-4b13-bbab-404ed9acdd9b
+    m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c2033792-c531-4f85-a34a-76bd9a3203c0
+    m_ActionName: 'Player/Shoot[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3a842eb3-5317-49b7-962e-72d9b0c9a9e5
+    m_ActionName: 'Player/shoot Release[/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 157f50fd-58c6-46f1-a19d-0337f1a8159d
+    m_ActionName: 'Player/Reload[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &8050466276059236489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116083868434907355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba920a1bd5a95f840b12150d83cf6dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  pauseMenuUI: {fileID: 0}
-  globalVolume: {fileID: 0}
