@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public float attackDistance = 3f;
     public float attackInterval = 2f;
     public float stumbleDuration = 1.5f;
+    public int attackDamage = 10; // damage zombie deals
 
     // Rerference
     public Transform Player;
@@ -77,9 +78,27 @@ public class Enemy : MonoBehaviour
         anim.SetBool("isWalking", false);
         anim.SetTrigger("Attack");
 
-        yield return new WaitForSeconds(attackInterval);
+        // Wait brief moment for the animation swing to hit the screen
+        yield return new WaitForSeconds(1f);
+
+        // Check if player is still in range during the hit window
+        if (Player != null && Vector3.Distance(transform.position, Player.position) <= attackDistance + 0.5f)
+        {
+            // FInd Game Manager
+            GameManager gm = FindAnyObjectByType<GameManager>();
+            if (gm != null)
+            {
+                // This calls your GameManager's health function directly!
+                gm.ChangeHealth(-attackDamage);
+                Debug.Log("[Enemy AI] Swing connected! Sent -10 damage to GameManager.");
+            }
+        }
+
+        // Wait out the remainder of the attack cooldown
+        yield return new WaitForSeconds(attackInterval - 1f);
 
         isAttacking = false;
+
     }
 
     public void Hit(int Damage)
@@ -94,7 +113,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            StartCoroutine(PlayHitAnimation());
+            if (!isKnockedBack) StartCoroutine(PlayHitAnimation());
 
         }
     }
@@ -110,15 +129,19 @@ public class Enemy : MonoBehaviour
         // Route collision damage through the central Hit function
         if (collision.gameObject.CompareTag("Damage"))
         {
-            Hit(10);
+            Hit(25);
         }
     }
 
     void Die()
     {
         isDead = true;
-        Agent.isStopped = true;
-        if (Agent.hasPath) Agent.ResetPath();
+        if (Agent.isActiveAndEnabled)
+        {
+            Agent.isStopped = true;
+            if (Agent.hasPath) Agent.ResetPath();
+            Agent.enabled = false; // Disable pathfinding completely
+        }
 
         anim.SetBool("isWalking", false);
         anim.SetTrigger("dead");
@@ -131,14 +154,23 @@ public class Enemy : MonoBehaviour
     public void Stumble(Vector3 pushDirection, float force)
     {
         if (isDead) return;
+
+        // Interrupt regular attack windups if shoved backwards
+        StopCoroutine(nameof(PlayAttackAnimation));
+        isAttacking = false;
+
         StartCoroutine(PlayStumbleAnimation(pushDirection, force));
     }
 
     IEnumerator PlayStumbleAnimation(Vector3 direction, float force)
     {
         isKnockedBack = true;
-        Agent.isStopped = true;
-        if (Agent.hasPath) Agent.ResetPath();
+
+        if (Agent.isActiveAndEnabled)
+        {
+            Agent.isStopped = true;
+            if (Agent.hasPath) Agent.ResetPath();
+        }
 
         anim.SetBool("isWalking", false);
         anim.SetTrigger("Stumbling");
@@ -146,14 +178,25 @@ public class Enemy : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < stumbleDuration)
         {
+            // Calculate declining knockback velocity arc curve
             float currentForce = force * (1f - (elapsed / stumbleDuration));
-            Agent.Move(direction * currentForce * Time.deltaTime);
+
+            if (Agent.isActiveAndEnabled)
+            {
+                Agent.Move(direction * currentForce * Time.deltaTime);
+            }
 
             elapsed += Time.deltaTime;
             yield return null;
         }
 
         isKnockedBack = false;
-        Agent.isStopped = false;
+
+        // Give the Enemy its path targeting back immediately upon recovery
+        if (Agent.isActiveAndEnabled && Player != null)
+        {
+            Agent.isStopped = false;
+            Agent.SetDestination(Player.position);
+        }
     }
 }
