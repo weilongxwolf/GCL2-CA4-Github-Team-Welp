@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: d897c8719621c37459cf8af442920ea1, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 96fbd48b5c26285468765984e92edae5, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -384,7 +384,8 @@ MonoBehaviour:
   shoveAngle: 60
   zombieLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
+  flashlight: {fileID: 0}
 --- !u!114 &4448937918424206608
 MonoBehaviour:
   m_ObjectHideFlags: 0
